@@ -1,5 +1,6 @@
 import { experienceData } from '@/constants/experience-data';
 import { topBorder } from '../shared/svg-borders';
+import { Badge } from '../ui/badge';
 
 export function ExperienceSection() {
   return (
@@ -15,7 +16,7 @@ export function ExperienceSection() {
             className="relative flex gap-6"
           >
             <div className="flex flex-col items-center">
-              <div className="z-10 shrink-0 bg-white p-1">
+              <div className="z-10 shrink-0 p-1">
                 <img
                   src={experience.logo}
                   alt={experience.altText}
@@ -35,27 +36,32 @@ export function ExperienceSection() {
                     : ''}
                 </h3>
                 {experience.employmentType !== 'Internship' && (
-                  <p className="text-gray-500">{experience.employmentType}</p>
+                  <p className="text-muted-foreground">
+                    {experience.employmentType}
+                  </p>
                 )}
               </div>
               <div className="mt-4 space-y-6">
                 {experience.roles.map((role, roleIndex) => (
-                  <div key={`${role.title}-${roleIndex}`} className="">
+                  <div key={`${role.title}-${roleIndex}`}>
                     <div className="mb-2 flex items-start justify-between">
                       <h4 className="text-lg font-medium">{role.title}</h4>
-                      <p className="text-sm whitespace-nowrap text-gray-500">
+                      <p className="text-muted-foreground text-sm whitespace-nowrap">
                         {role.period}
                       </p>
                     </div>
-                    <p className="mb-3 text-sm text-gray-500">
+                    <p className="text-muted-foreground mb-3 text-sm">
                       📍 {role.location}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {role.skills.map((skill, skillIndex) => (
-                        <SkillTag
+                        <Badge
+                          variant="secondary"
+                          className="rounded py-1"
                           key={`${skill}-${skillIndex}`}
-                          skill={skill}
-                        />
+                        >
+                          {skill}
+                        </Badge>
                       ))}
                     </div>
                   </div>
@@ -88,10 +94,4 @@ const VerticalDashedLine = () => (
       />
     </svg>
   </div>
-);
-
-const SkillTag = ({ skill }: { skill: string }) => (
-  <span className="rounded bg-gray-100 px-2 py-1 text-xs text-gray-600">
-    {skill}
-  </span>
 );

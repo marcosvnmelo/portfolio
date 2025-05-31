@@ -7,7 +7,7 @@ export function AboutMeSection() {
       style={{ backgroundImage: topBorder }}
     >
       <h2 className="mb-6 text-2xl font-bold">About Me</h2>
-      <p className="leading-relaxed text-gray-700">
+      <p className="text-muted-foreground leading-relaxed">
         Sou um desenvolvedor de software experiente, com foco em React.js e
         TypeScript. Tenho mais de 2 anos de experiência na área, trabalhando em
         uma variedade de projetos, desde jogos, pequenas aplicações web, e até
