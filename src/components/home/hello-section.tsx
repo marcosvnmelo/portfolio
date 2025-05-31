@@ -7,7 +7,7 @@ export function HelloSection() {
     <header className="mb-10 px-4 md:px-16">
       <div className="flex flex-col md:flex-row md:items-start md:justify-between md:space-x-5">
         <div className="mb-8 md:mb-0 md:max-w-xl">
-          <h2 className="mb-3 text-4xl font-medium">Hello! I am Marcos Melo</h2>
+          <h2 className="mb-3 text-4xl font-medium">Olá! Eu sou Marcos Melo</h2>
           <p className="mb-6 text-lg font-medium">
             Software Engineer | Backend | Typescript | Frontend | React | Vue |
             Fullstack
@@ -19,7 +19,7 @@ export function HelloSection() {
           >
             <RippleButton className="rounded text-base">
               <LinkedinIcon />
-              Connect with me on LinkedIn
+              Conecte-se comigo no LinkedIn
             </RippleButton>
           </a>
         </div>

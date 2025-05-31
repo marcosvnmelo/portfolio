@@ -8,7 +8,7 @@ export function EducationSection() {
       className="px-4 py-10 md:px-16"
       style={{ backgroundImage: topBorder }}
     >
-      <h2 className="mb-6 text-2xl font-bold">Education</h2>
+      <h2 className="mb-6 text-2xl font-bold">Educação</h2>
       <div className="space-y-10 font-semibold">
         {educationData.map((education, index) => (
           <div

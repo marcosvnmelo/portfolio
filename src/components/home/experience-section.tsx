@@ -9,7 +9,7 @@ export function ExperienceSection() {
       className="px-4 py-10 md:px-16"
       style={{ backgroundImage: topBorder }}
     >
-      <h2 className="mb-6 text-2xl font-bold">Experience</h2>
+      <h2 className="mb-6 text-2xl font-bold">Experiência</h2>
       <div className="space-y-10 font-semibold">
         {experienceData.map((experience, index) => (
           <div
@@ -33,12 +33,16 @@ export function ExperienceSection() {
                 <h3 className="text-xl font-medium">
                   {experience.company}
                   {experience.employmentType === 'Internship'
-                    ? ' · Internship'
+                    ? ' · Estágio'
                     : ''}
                 </h3>
                 {experience.employmentType !== 'Internship' && (
                   <p className="text-muted-foreground">
-                    {experience.employmentType}
+                    {experience.employmentType === 'full-time'
+                      ? 'Tempo integral'
+                      : experience.employmentType === 'part-time'
+                      ? 'Meio período'
+                      : experience.employmentType}
                   </p>
                 )}
               </div>

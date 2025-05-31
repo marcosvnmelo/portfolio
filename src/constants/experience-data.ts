@@ -23,13 +23,13 @@ export const experienceData: ExperienceItem[] = [
   {
     company: 'Lisbom',
     logo: lisbomImage,
-    altText: 'Lisbom · Internship',
+    altText: 'Lisbom · Estágio',
     employmentType: 'Internship',
     roles: [
       {
-        title: 'Full Stack Developer',
-        period: 'Aug 2023 - Present',
-        location: 'Brasil · Remote',
+        title: 'Desenvolvedor Full Stack',
+        period: 'Ago 2023 - Presente',
+        location: 'Brasil · Remoto',
         skills: [
           'JavaScript',
           'Node.js',
@@ -58,8 +58,8 @@ export const experienceData: ExperienceItem[] = [
     employmentType: 'full-time',
     roles: [
       {
-        title: 'Full Stack Developer',
-        period: 'Sep 2021 - Aug 2023',
+        title: 'Desenvolvedor Full Stack',
+        period: 'Set 2021 - Ago 2023',
         location: 'Cuiabá, Mato Grosso, Brasil',
         skills: [
           'JavaScript',
@@ -103,9 +103,9 @@ export const experienceData: ExperienceItem[] = [
     employmentType: 'part-time',
     roles: [
       {
-        title: 'Full Stack Developer',
-        period: 'Jan 2021 - Sep 2021',
-        location: 'Brasil · Remote',
+        title: 'Desenvolvedor Full Stack',
+        period: 'Jan 2021 - Set 2021',
+        location: 'Brasil · Remoto',
         skills: [
           'JavaScript',
           'Node.js',

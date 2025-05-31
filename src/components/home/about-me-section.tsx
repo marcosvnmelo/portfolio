@@ -6,7 +6,7 @@ export function AboutMeSection() {
       className="px-4 py-10 md:px-16"
       style={{ backgroundImage: topBorder }}
     >
-      <h2 className="mb-6 text-2xl font-bold">About Me</h2>
+      <h2 className="mb-6 text-2xl font-bold">Sobre mim</h2>
       <p className="text-muted-foreground leading-relaxed">
         Sou um desenvolvedor de software experiente, com foco em React.js e
         TypeScript. Tenho mais de 2 anos de experiência na área, trabalhando em
