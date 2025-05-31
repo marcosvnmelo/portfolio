@@ -4,8 +4,11 @@ import { allBorders } from './components/shared/svg-borders';
 import { ExperienceSection } from './components/home/experience-section';
 import { EducationSection } from './components/home/education-section';
 import { SkillsSection } from './components/home/skills-section';
+import { useSystemDarkMode } from './hooks/use-system-dark-mode';
 
 function App() {
+  useSystemDarkMode();
+
   return (
     <div className="flex h-full w-full flex-col">
       <div className="mx-5 min-h-screen max-w-4xl lg:mx-auto">
