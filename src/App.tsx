@@ -1,9 +1,8 @@
-import unoparImage from '/unopar-logo.jpg';
-import ifImage from '/if-logo.jpg';
 import { HelloSection } from './components/home/hello-section';
 import { AboutMeSection } from './components/home/about-me-section';
 import { allBorders } from './components/shared/svg-borders';
 import { ExperienceSection } from './components/home/experience-section';
+import { EducationSection } from './components/home/education-section';
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
           <HelloSection />
           <AboutMeSection />
           <ExperienceSection />
+          <EducationSection />
         </div>
       </div>
     </div>
