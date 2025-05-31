@@ -3,6 +3,7 @@ import { AboutMeSection } from './components/home/about-me-section';
 import { allBorders } from './components/shared/svg-borders';
 import { ExperienceSection } from './components/home/experience-section';
 import { EducationSection } from './components/home/education-section';
+import { SkillsSection } from './components/home/skills-section';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <AboutMeSection />
           <ExperienceSection />
           <EducationSection />
+          <SkillsSection />
         </div>
       </div>
     </div>
