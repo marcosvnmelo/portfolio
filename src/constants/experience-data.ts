@@ -23,8 +23,8 @@ export const experienceData: ExperienceItem[] = [
   {
     company: 'Lisbom',
     logo: lisbomImage,
-    altText: 'Lisbom · Estágio',
-    employmentType: 'Internship',
+    altText: 'Lisbom',
+    employmentType: 'full-time',
     roles: [
       {
         title: 'Desenvolvedor Full Stack',

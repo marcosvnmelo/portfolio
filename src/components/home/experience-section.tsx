@@ -32,17 +32,17 @@ export function ExperienceSection() {
               <div>
                 <h3 className="text-xl font-medium">
                   {experience.company}
-                  {experience.employmentType === 'Internship'
+                  {experience.employmentType === 'internship'
                     ? ' · Estágio'
                     : ''}
                 </h3>
-                {experience.employmentType !== 'Internship' && (
+                {experience.employmentType !== 'internship' && (
                   <p className="text-muted-foreground">
                     {experience.employmentType === 'full-time'
                       ? 'Tempo integral'
                       : experience.employmentType === 'part-time'
-                      ? 'Meio período'
-                      : experience.employmentType}
+                        ? 'Meio período'
+                        : experience.employmentType}
                   </p>
                 )}
               </div>
